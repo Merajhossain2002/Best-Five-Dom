@@ -72,8 +72,15 @@ document
     const managerCost = getInputValueById("manager");
     const coachCost = getInputValueById("coach");
 
-    if (isNaN(managerCost) || isNaN(coachCost)) {
-      alert("Please Provide a valid number.");
+    if (isNaN(managerCost)) {
+      alert("Please Provide a valid manager cost number.");
+      const managerElement = document.getElementById("manager");
+      managerElement.value = "";
+      return;
+    } else if (isNaN(coachCost)) {
+      alert("Please Provide a valid coach cost number.");
+      const coachElement = document.getElementById("coach");
+      coachElement.value = "";
       return;
     } else {
       const calculateTotal = playerExpenses + managerCost + coachCost;
