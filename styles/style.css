@@ -3,19 +3,21 @@
 
 * {
   font-family: "Manrope", sans-serif;
-  background-color: #151515;
 }
-
+.common-color {
+  color: #ff5e19;
+}
 body {
   margin: 0px;
   padding: 0px;
+  background-color: #151515 !important;
 }
 
 .header-title {
   color: #ff5e19;
   font-family: "Berkshire Swash", cursive;
   font-weight: 400;
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 94px;
   text-align: center;
   text-transform: capitalize;
@@ -28,7 +30,7 @@ body {
 
 .header-player {
   margin-top: 7.3rem;
-  margin-left: -1rem;
+  margin-left: -0.6rem;
 }
 
 .header-card-img {
@@ -37,4 +39,12 @@ body {
 
 .header-football {
   margin-top: 20.5rem;
+}
+
+/* card css */
+.select-btn {
+  color: white;
+  background-color: #a2a9af;
+  border: none;
+  border-radius: 1rem;
 }
