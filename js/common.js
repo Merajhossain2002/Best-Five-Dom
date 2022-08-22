@@ -1,3 +1,5 @@
+// common function for player selection
+
 function selectPlayer(playerId, playerNameId) {
   const playerNameElement = document.getElementById(playerNameId);
   const playerNameValue = playerNameElement.innerText;
@@ -19,12 +21,16 @@ function selectPlayer(playerId, playerNameId) {
   }
 }
 
+// common function for getting values from input and convert the value into number.
+
 function getInputValueById(elementId) {
   const playerCostElement = document.getElementById(elementId);
   const playerCostString = playerCostElement.value;
   const playerCost = parseInt(playerCostString);
   return playerCost;
 }
+
+// common function for getting values from element and convert the value into number.
 
 function getElementValueById(elementId) {
   const playerCostElement = document.getElementById(elementId);
