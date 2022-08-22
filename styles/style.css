@@ -1,5 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap");
 
 * {
   font-family: "Manrope", sans-serif;
+  background-color: #151515;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.header-title {
+  color: #ff5e19;
+  font-family: "Berkshire Swash", cursive;
+  font-weight: 400;
+  font-size: 3.5rem;
+  line-height: 94px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-top: 10rem;
+}
+
+.header-height {
+  height: 480px;
+}
+
+.header-player {
+  margin-top: 7.3rem;
+  margin-left: -1rem;
+}
+
+.header-card-img {
+  margin-top: 8.5rem;
+}
+
+.header-football {
+  margin-top: 20.5rem;
 }
