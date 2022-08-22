@@ -66,11 +66,15 @@
               <div class="card h-100 bg-dark">
                 <img src="images/messi.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">Lionel Messi</h5>
+                  <h5 id="player-one-name" class="card-title">Lionel Messi</h5>
                   <h6 class="text-white-50 pt-2 fs-6">
                     36 Goals - 120 Assists
                   </h6>
-                  <button type="button" class="select-btn mt-3 py-2 px-5">
+                  <button
+                    id="player-one-select"
+                    type="button"
+                    class="select-btn mt-3 py-2 px-5"
+                  >
                     Select
                   </button>
                 </div>
@@ -80,11 +84,15 @@
               <div class="card h-100 bg-dark">
                 <img src="images/neymar.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">Neymar</h5>
+                  <h5 id="player-two-name" class="card-title">Neymar</h5>
                   <h6 class="text-white-50 pt-2 fs-6">
                     36 Goals - 120 Assists
                   </h6>
-                  <button type="button" class="select-btn mt-3 py-2 px-5">
+                  <button
+                    id="player-two-select"
+                    type="button"
+                    class="select-btn mt-3 py-2 px-5"
+                  >
                     Select
                   </button>
                 </div>
@@ -94,11 +102,17 @@
               <div class="card h-100 bg-dark">
                 <img src="images/ramos.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">Sergio Ramos</h5>
+                  <h5 id="player-three-name" class="card-title">
+                    Sergio Ramos
+                  </h5>
                   <h6 class="text-white-50 pt-2 fs-6">
                     36 Goals - 120 Assists
                   </h6>
-                  <button type="button" class="select-btn mt-3 py-2 px-5">
+                  <button
+                    id="player-three-select"
+                    type="button"
+                    class="select-btn mt-3 py-2 px-5"
+                  >
                     Select
                   </button>
                 </div>
@@ -108,11 +122,15 @@
               <div class="card h-100 bg-dark">
                 <img src="images/cavani.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">Vitinha</h5>
+                  <h5 id="player-four-name" class="card-title">Vitinha</h5>
                   <h6 class="text-white-50 pt-2 fs-6">
                     36 Goals - 120 Assists
                   </h6>
-                  <button type="button" class="select-btn mt-3 py-2 px-5">
+                  <button
+                    id="player-four-select"
+                    type="button"
+                    class="select-btn mt-3 py-2 px-5"
+                  >
                     Select
                   </button>
                 </div>
@@ -122,11 +140,17 @@
               <div class="card h-100 bg-dark">
                 <img src="images/pogba.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">Renato Sanches</h5>
+                  <h5 id="player-five-name" class="card-title">
+                    Renato Sanches
+                  </h5>
                   <h6 class="text-white-50 pt-2 fs-6">
                     36 Goals - 120 Assists
                   </h6>
-                  <button type="button" class="select-btn mt-3 py-2 px-5">
+                  <button
+                    id="player-five-select"
+                    type="button"
+                    class="select-btn mt-3 py-2 px-5"
+                  >
                     Select
                   </button>
                 </div>
@@ -136,11 +160,15 @@
               <div class="card h-100 bg-dark">
                 <img src="images/mbappe.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">M'bappe</h5>
+                  <h5 id="player-six-name" class="card-title">M'bappe</h5>
                   <h6 class="text-white-50 pt-2 fs-6">
                     36 Goals - 120 Assists
                   </h6>
-                  <button type="button" class="select-btn mt-3 py-2 px-5">
+                  <button
+                    id="player-six-select"
+                    type="button"
+                    class="select-btn mt-3 py-2 px-5"
+                  >
                     Select
                   </button>
                 </div>
@@ -158,13 +186,7 @@
               <h5 class="text-white text-center pt-5 pb-3 px-5">
                 Selected - V
               </h5>
-              <ol class="text-white-50">
-                <li class="text-white p-2 mb-3">Lionel messi</li>
-                <li class="text-white p-2 mb-3">Neymar</li>
-                <li class="text-white p-2 mb-3">Ramos</li>
-                <li class="text-white p-2 mb-3">Renato Sanches</li>
-                <li class="text-white p-2 mb-3">Vitinha</li>
-              </ol>
+              <ol id="selected-V" class="text-white-50"></ol>
             </div>
             <!-- Selected - V end -->
 
@@ -177,48 +199,45 @@
                   class="w-50 bg-transparent border-2 border-white ps-3 text-white"
                   type="number"
                   name=""
-                  id=""
+                  id="player-cost-input"
                   placeholder="1000"
                 />
               </div>
-              <button class="btn btn-primary w-100 mb-3">Calculate</button>
+              <button id="calculate" class="btn btn-primary w-100 mb-3">
+                Calculate
+              </button>
               <div class="">
                 <h6 class="text-white-50 py-3 d-inline">
-                  Player Expenses
-                  :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $
-                  <span id="expense-amount ">5000</span>
+                  Player Expenses :<span class="text-white ms-5">$</span>
+                  <span id="expense-amount" class="text-white">00</span>
                 </h6>
               </div>
               <div class="p-3">
-                <h6 class="text-white-50 py-3 d-inline">
-                  Manager :&nbsp;&nbsp;
-                </h6>
+                <h6 class="text-white-50 py-3 me-2 d-inline">Manager :</h6>
                 <input
                   class="w-50 bg-transparent border-2 border-white ps-3 text-white"
                   type="number"
                   name=""
-                  id=""
+                  id="manager"
                   placeholder="5000"
                 />
               </div>
               <div class="px-3 pb-3">
-                <h6 class="text-white-50 py-3 d-inline">
-                  Coach :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </h6>
+                <h6 class="text-white-50 py-3 me-4 d-inline">Coach :</h6>
                 <input
                   class="w-50 bg-transparent border-2 border-white ps-3 text-white"
                   type="number"
                   name=""
-                  id=""
+                  id="coach"
                   placeholder="3000"
                 />
               </div>
-              <button class="btn btn-primary w-100 mb-3">
+              <button id="calculate-total" class="btn btn-primary w-100 mb-3">
                 Calculate Total
               </button>
               <div class="d-flex justify-content-between py-3">
                 <h6 class="text-white-50">Total :</h6>
-                <h6 class="common-color">$ <span>13000</span></h6>
+                <h6 class="common-color">$ <span id="total">00</span></h6>
               </div>
             </div>
             <!-- budget end -->
